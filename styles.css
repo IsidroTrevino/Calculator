@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Doodle+Shadow&display=swap');
 
 
-
 body {
     width: 100vw;
     height: 100vh;
@@ -9,111 +8,96 @@ body {
     justify-content: center;
     align-items: center;
     font: 400 16px 'Poppins', sans-serif;
+    padding: 40px;
+    background-color: #bebaba;
 }
 
-#Container {
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#Calculator {
-    width: 450px;
-    height: 640px;
+#calculator {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    border-radius: 45px;
+    width: 400px;
+    height: 600px;
+    border-radius: 30px;
     background-color: black;
 }
 
-.Display {
-    height: 180px;
-    color: #fff;
-    font-size: 70px;
+.display {
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
     text-align: right;
-    padding-right: 45px;
-    padding-top: 40px;
-    border-radius: 45px 45px 0px 0px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 70px;
 }
 
-#Container #Calculator .Buttons {
-    width: 100%;
-    height: 100%;
+
+button {
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    background-color: #393737;
+    color: white;
+    font-weight: 1000;
+}
+
+button:hover {
+    background-color: #636060;
+}
+
+button:active {
+    background-color: rgb(110, 108, 108);
+}
+
+#keys {
     display: flex;
     flex-direction: column;
+    justify-content: space-between; 
+    height: 100%; 
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
-#Container #Calculator .Buttons .row {
-    width: 100%;
-    height: 100%;
+#zero {
+    width: 170px;
+    border-radius: 100px;
+}
+
+.row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-#Container #Calculator .Buttons .row .button {
-    width: 80px;
-    height: 77px;
-    margin: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
+.extra {
+    background-color: #bebaba;
     color: black;
-    cursor: pointer;
 }
 
-#Container #Calculator .Buttons .row .button:hover {
-    background-color: #ccc;
+.extra:hover {
+    background-color: #cfcbcb;
 }
 
-#Container #Calculator .Buttons .row .button:active {
-    background-color: #aaa;
+.extra:active {
+    background-color: #e1dcdc;
 }
 
-#Container #Calculator .Buttons .row #zero {
-    width: 180px;
-    border-radius: 50px;
-    padding-right: 100px;
+.operator {
+    background-color: #f98410;
 }
 
-#Container #Calculator .Buttons .row #one,
-#Container #Calculator .Buttons .row #two,
-#Container #Calculator .Buttons .row #three,
-#Container #Calculator .Buttons .row #four,
-#Container #Calculator .Buttons .row #five,
-#Container #Calculator .Buttons .row #six,
-#Container #Calculator .Buttons .row #seven,
-#Container #Calculator .Buttons .row #eight,
-#Container #Calculator .Buttons .row #nine, 
-#Container #Calculator .Buttons .row #decimal,
-#Container #Calculator .Buttons .row #zero 
-{
-    background-color: #4e4b4b;
-    color: #fff;
+.operator:hover {
+    background-color: #ffa144;
 }
 
-#Container #Calculator .Buttons .row #divide,
-#Container #Calculator .Buttons .row #multiply,
-#Container #Calculator .Buttons .row #subtract,
-#Container #Calculator .Buttons .row #add,
-#Container #Calculator .Buttons .row #equals {
-    background-color: #ff9500;
-    color: #fff;
+.operator:active {
+    background-color: #f7ba7d;
 }
-
-#Container #Calculator .Buttons .row #clear,
-#Container #Calculator .Buttons .row #plus-minus,
-#Container #Calculator .Buttons .row #percent
-{
-    background-color: #a6a6a6;
-    color: #fff;
-}
-
-
 
